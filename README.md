@@ -3,7 +3,7 @@ Open Farming Hackdays 2026
 
 ## Challenge
 
-**Rewilde the meadow**
+**Rewild the meadow**
 
 ## User story
 

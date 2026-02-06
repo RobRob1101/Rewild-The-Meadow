@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Transformer</title>
+    <style>
+        body { font-family: sans-serif; margin: 50px; line-height: 1.6; }
+        .container { max-width: 400px; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; }
+        button { padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Flask Text Upper-caser</h2>
+        
+        <form method="POST">
+            <input type="text" name="user_input" placeholder="Type something here..." required>
+            <button type="submit">Convert to Upper Case</button>
+        </form>
+
+        {% if result %}
+        <div style="margin-top: 20px;">
+            <strong>Result:</strong>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
