@@ -19,14 +19,14 @@ def index():
         selected = request.form.getlist('vorhandene_arten')
         # Hier können die anderen Daten (Feuchte, etc.) wie gehabt verarbeitet werden
         
-        antwort = request.form.get('Graeser_gt_35')
-
+        graeser_antwort = request.form.get('Graeser_gt_35')
+        krauter_antwort = request.form.get('Krauter_gt_40')
 
         return f""" 
         
         Daten empfangen. Ausgewählte Arten: {', '.join(selected)}   -------------
-        unerwünschte gräser > 35%: {antwort}  ----------
-        
+        unerwünschte Gräser > 35%: {graeser_antwort}  ----------
+        unerwünschte Kräuter > 40%: {krauter_antwort}  ----------
 
         """
     
