@@ -169,35 +169,36 @@ Frühling-Sommer / 10-50 cm
 
 # Zeigerfplanzen für Magerkeit
 
-Die folgenden Pflanzen zeigen Magerkeit in der Wiese, sind aber selbst nicht *unbedingt* geltende offizielle Zeigerpflanzen. Sie zeigen nur, dass die Wiese Potenzial aufweist.
+Tabelle von Pflanzenarten und deren Status als Zeigerarten für Magerkeit im Kontext der Qualitätsstufe II (QII). Arten, die mit einem Haken markiert sind, sind offizielle Zeigerarten. Alle Arten dieser Tablle zeigen aber erhöhtes Potenzial an.
 
-Zeigerarten für Magerkeit	QII-Zeiger
-Fromental	
-Knaulgras	
-Geruchgras 	x
-Aufrechte Trespe 	x
-Rot-Schwingel 	
-Goldhafer 	
-Flaumhafer	x
-Borstenblättrige, horstwüchsige Gräser	x
-Hainsimsen	x
-Seggen	x
-Wollgräser	x
-Zittergras	x
-Rotklee	
-Wicke blau/violett	
-Gelbblühende Kleeart	x
-Wiesen-Platterbse	x
-Grosse Bibernelle	
-Wiesen-Bocksbart	x
-Vergissmeinnicht	
-Wiesen-Labkraut	
-Rote Waldnelke	
-Wiesen-Margerite	x
-Feld-Witwenblume	x
-Spitzwegerich	
-Gemeine Brunelle	
-Wiesen-Flockenblume	x
-Gelbblühende Korbblütler, einköpfig	x
-Gelbblühende Korbblütler, mehrköpfig	x
-Kümmel	
+| Pflanzenart / Artengruppe | Kategorie (Botanisch) | QII-Zeiger (Magerkeit) |
+| --- | --- | --- |
+| **Fromental** | Gras |  |
+| **Knaulgras** | Gras |  |
+| **Geruchgras** | Gras | **✓** |
+| **Aufrechte Trespe** | Gras | **✓** |
+| **Rot-Schwingel** | Gras |  |
+| **Goldhafer** | Gras |  |
+| **Flaumhafer** | Gras | **✓** |
+| **Borstenblättrige, horstwüchsige Gräser** | Gräser | **✓** |
+| **Hainsimsen** | Sauergräser (Simsen) | **✓** |
+| **Seggen** | Sauergräser | **✓** |
+| **Wollgräser** | Sauergräser | **✓** |
+| **Zittergras** | Gras | **✓** |
+| **Rotklee** | Leguminose |  |
+| **Wicke** (blau/violett) | Leguminose |  |
+| **Gelbblühende Kleeart** | Leguminose | **✓** |
+| **Wiesen-Platterbse** | Leguminose | **✓** |
+| **Grosse Bibernelle** | Kraut |  |
+| **Wiesen-Bocksbart** | Kraut | **✓** |
+| **Vergissmeinnicht** | Kraut |  |
+| **Wiesen-Labkraut** | Kraut |  |
+| **Rote Waldnelke** | Kraut |  |
+| **Wiesen-Margerite** | Kraut | **✓** |
+| **Feld-Witwenblume** | Kraut | **✓** |
+| **Spitzwegerich** | Kraut |  |
+| **Gemeine Brunelle** | Kraut |  |
+| **Wiesen-Flockenblume** | Kraut | **✓** |
+| **Gelbblühende Korbblütler** (einköpfig) | Kräuter | **✓** |
+| **Gelbblühende Korbblütler** (mehrköpfig) | Kräuter | **✓** |
+| **Kümmel** | Kraut |  |

@@ -33,7 +33,7 @@ Du sollst bei der Beratung folgendermassen vorgehen:
 
 {{< include indicators.md >}}
 
-{{< includes nongrata.md >}}
+{{< include nongrata.md >}}
 
-{{< includes measures.md >}}
+{{< include measures.md >}}
 
