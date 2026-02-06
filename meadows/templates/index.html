@@ -2,68 +2,50 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Potenzialeinschätzung Wiese</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f1; color: #333; line-height: 1.6; padding: 20px; }
-        .card { background: white; max-width: 700px; margin: 0 auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h2 { color: #2e7d32; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
-        label { font-weight: bold; display: block; margin-top: 15px; }
-        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background: #2e7d32; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; font-size: 16px; }
-        button:hover { background: #1b5e20; }
-        .result-box { background: #e8f5e9; padding: 20px; border-left: 5px solid #2e7d32; margin-top: 30px; }
-    </style>
+    <title>Wiesen-Check</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
+
 </head>
 <body>
 
-<div class="card">
-    <h2>Wiesen-Potenzial Check</h2>
-    <form method="POST">
+<div class="container">
+    <form method="POST" action="/"> 
         
-        <label>1. Vorhandene Arten (Artenliste/Beobachtung)</label>
-        <textarea name="arten" rows="3" placeholder="z.B. Glatthafer, Wiesen-Flockenblume, etc." required></textarea>
+        <h3>Erwünschte Arten erfassen</h3>
+        <div class="autocomplete-wrapper">
+            <input type="text" id="search-field" placeholder="Klicken zum Auswählen..." autocomplete="off">
+            <div id="dropdown" class="dropdown-list">
+                {% for flower in flowers %}
+                <div class="dropdown-item" data-value="{{ flower }}">{{ flower }}</div>
+                {% endfor %}
+            </div>
+        </div>
 
-        <label>2. Eckdaten zur Wiese</label>
-        <select name="wuechsigkeit">
-            <option value="hoch">Hohe Wüchsigkeit (frohwüchsig)</option>
-            <option value="mittel">Mittlere Wüchsigkeit</option>
-            <option value="gering">Geringe Wüchsigkeit (mager)</option>
-        </select>
-
-        <input type="text" name="exposition" placeholder="Exposition (z.B. Südhang, Ebene)">
+        <div id="selected-container"></div>
         
-        <select name="feuchte">
-            <option value="feucht">Feucht/Nass</option>
-            <option value="frisch">Frisch</option>
-            <option value="trocken">Trocken</option>
-            <option value="sehr trocken">Sehr trocken</option>
-        </select>
+        <div id="hidden-inputs"></div>
 
-        <input type="text" name="wald_einfluss" placeholder="Einfluss von Wald (Schatten, Wind)">
-        <input type="text" name="samen_nachbarn" placeholder="Sameneintrag von Nachbarflächen">
+        <hr> <h3>Unerwünschte Arten</h3>
+        <div class="option-group">
+            <h4>Gräser > 35%</h4>
+            <div>
+                <label>
+                    <input type="radio" name="Graeser_gt_35" value="true" required> Ja
+                </label>
+                <label>
+                    <input type="radio" name="Graeser_gt_35" value="false"> Nein
+                </label>
+            </div>
+        </div>
 
-        <label>3. Ertragsanteil unerwünschter Arten (%)</label>
-        <input type="number" name="unbeiwert" min="0" max="100" value="0">
+        <button type="submit" class="submit-btn">Alle Daten absenden</button>
+        
+    </form> </div>
 
-        <label>4. Eigene Potenzialeinschätzung</label>
-        <textarea name="potenzial" rows="2" placeholder="Wie schätzen Sie die Entwicklung ein?"></textarea>
 
-        <button type="submit">Einschätzung & Massnahmen generieren</button>
-    </form>
 
-    {% if result %}
-    <div class="result-box">
-        <h3>Ergebnis & Massnahmenvorschläge</h3>
-        <p><strong>Einschätzung:</strong> {{ result.potenzial }}</p>
-        <p><strong>Empfohlene Massnahmen:</strong></p>
-        <ul>
-            {% for punkt in result.massnahmen %}
-                <li>{{ punkt }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
-</div>
+<script src="{{ url_for('static', filename='js/form.js') }}"></script>
 
 </body>
 </html>
