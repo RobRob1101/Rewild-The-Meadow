@@ -6,7 +6,7 @@
       "botanical_name": "Campanula sp.",
       "description": "Blätter ungeteilt, wechselständig; Stängelblätter oft mit feinen weissen Drüsenpunkten; Blüte glockenförmig.",
       "category": "herb",
-      "image": ""
+      "image": "https://www.intratuin.de/media/wysiwyg/Campanula_persicifolia_Coerulea_.jpg"
     },
     {
       "id": "KNASS",
@@ -110,7 +110,7 @@
       "botanical_name": "Helianthemum sp.",
       "description": "Kleine Sträucher mit gegenständigen Blättern; Blüten gelb, 5 Kronblätter, sehr hinfällig.",
       "category": "shrub",
-      "image": ""
+      "image": "https://www.mein-schoener-garten.de/sites/mein-schoener-garten.de/files/sonnenroeschen-hybride-sterntaler-267047-dam-msg.JPG"
     },
     {
       "id": "PTNSS",
@@ -202,7 +202,7 @@
     }
   ],
   "lean_indicators": [
-    { "id": "ARREL", "labels": ["Fromental"], "botanical_name": "Arrhenatherum elatius", "category": "grass", "is_official_q2": false, "image": "" },
+    { "id": "ARREL", "labels": ["Fromental"], "botanical_name": "Arrhenatherum elatius", "category": "grass", "is_official_q2": false, "image": "https://www.eagff.ch/files/_processed_/c/d/csm_Fromental_022-re_8f11a95560.jpg" },
     { "id": "DACGL", "labels": ["Knaulgras"], "botanical_name": "Dactylis glomerata", "category": "grass", "is_official_q2": false, "image": "" },
     { "id": "ANTAO", "labels": ["Geruchgras"], "botanical_name": "Anthoxanthum odoratum", "category": "grass", "is_official_q2": true, "image": "" },
     { "id": "BROER", "labels": ["Aufrechte Trespe"], "botanical_name": "Bromus erectus", "category": "grass", "is_official_q2": true, "image": "" },

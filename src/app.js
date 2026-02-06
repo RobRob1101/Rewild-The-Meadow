@@ -143,12 +143,11 @@ function renderAbioticStep(container) {
             </select>
         </div>
         <div class="form-group">
-            <label>Wüchsigkeit des Bestandes</label>
+            <label>Ertragsniveau des Bestandes</label>
             <select id="inp-growth">
                 <option value="">Bitte wählen...</option>
-                <option value="mager">Mager / Lückig</option>
-                <option value="mittel">Mittel</option>
-                <option value="ueppig">Üppig / Dicht</option>
+                <option value="mager">Weniger als 80 dt/ha TS pro Jahr</option>
+                <option value="mittel">Mehr als 80 dt/ha TS pro Jahr</option>
             </select>
         </div>
         <div class="form-group">
@@ -181,12 +180,29 @@ function renderPlantSelector(container, plantList, stateKey) {
 
     plantList.forEach(plant => {
         const card = document.createElement('div');
-        card.className = `plant-card ${state.answers[stateKey].has(plant.id) ? 'selected' : ''}`;
+        const isSelected = state.answers[stateKey].has(plant.id);
+        card.className = `plant-card ${isSelected ? 'selected' : ''}`;
         
+        // Bild-Logik
+        const hasImage = plant.image && plant.image.trim() !== "";
+        
+        // Wir rendern das Bild nur, wenn eine URL da ist.
+        const imageHtml = hasImage 
+            ? `<div class="plant-img-container">
+                 <img src="${plant.image}" alt="${plant.labels[0]}" class="plant-img" loading="lazy">
+               </div>` 
+            : ''; 
+
+        // Neue Struktur: Flex-Row mit Text-Spalte links und Bild rechts
         card.innerHTML = `
-            <span class="plant-name">${plant.labels[0]}</span>
-            <span class="plant-botanical">${plant.botanical_name}</span>
-            <div class="plant-desc">${plant.description || ''}</div>
+            <div class="plant-inner-layout">
+                <div class="plant-text-content">
+                    <span class="plant-name">${plant.labels[0]}</span>
+                    <span class="plant-botanical">${plant.botanical_name}</span>
+                    
+                </div>
+                ${imageHtml}
+            </div>
         `;
 
         card.addEventListener('click', () => {
@@ -331,7 +347,7 @@ function renderResultStep(container) {
                 <ul>
                     ${result.details.map(d => `<li>${d}</li>`).join('')}
                     <li>Exposition: ${state.answers.exposure || 'Nicht angegeben'}</li>
-                    <li>Wüchsigkeit: ${state.answers.growth || 'Nicht angegeben'}</li>
+                    <li>Ertagsniveau: ${state.answers.growth || 'Nicht angegeben'}</li>
                 </ul>
             </div>
         </div>

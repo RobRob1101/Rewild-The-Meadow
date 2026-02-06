@@ -67,7 +67,8 @@ select, input[type="text"] {
 /* Plant Grid */
 .plant-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive Grid: Karten werden nicht schmaler als 300px */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -75,15 +76,19 @@ select, input[type="text"] {
 .plant-card {
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1rem;
+    padding: 1.25rem; /* Etwas mehr Padding für Luftigkeit */
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
     background: white;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
-.plant-card:hover { border-color: var(--primary); }
+.plant-card:hover { 
+    border-color: var(--primary); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
 .plant-card.selected {
     background-color: var(--primary-light);
@@ -91,26 +96,65 @@ select, input[type="text"] {
     box-shadow: 0 0 0 1px var(--primary);
 }
 
-.plant-name { font-weight: 600; display: block; }
-.plant-botanical { font-style: italic; color: var(--text-light); font-size: 0.85rem; margin-top: 0.25rem; }
-.plant-desc { font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem; line-height: 1.3; }
+/* Flex Layout innerhalb der Karte */
+.plant-inner-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Oben bündig */
+    gap: 1rem;
+    height: 100%;
+}
 
-/* Negative Indicators */
-.checkbox-group {
+/* Linke Spalte: Text */
+.plant-text-content {
+    flex: 1; /* Nimmt den gesamten verfügbaren Platz ein */
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
-.check-item {
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+.plant-name { 
+    font-weight: 600; 
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
 }
 
-.check-item input { margin-top: 0.3rem; margin-right: 1rem; transform: scale(1.2); }
+.plant-botanical { 
+    font-style: italic; 
+    color: var(--text-light); 
+    font-size: 0.85rem; 
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.plant-desc { 
+    font-size: 0.85rem; 
+    color: #555; 
+    line-height: 1.5;
+}
+
+/* Rechte Spalte: Bild Container */
+.plant-img-container {
+    flex-shrink: 0; /* Verhindert Schrumpfen */
+    width: 120px;    /* Fixe Breite */
+    height: 120px;   /* Fixe Höhe */
+}
+
+/* Das Bild selbst */
+.plant-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Kreisrund */
+    object-fit: cover;  /* Bild füllt den Kreis ohne Verzerrung */
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+}
+
+.plant-card.selected .plant-img {
+    border-color: var(--primary);
+}
 
 /* Buttons */
 .actions {
