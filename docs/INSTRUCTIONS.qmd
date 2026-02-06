@@ -37,3 +37,4 @@ Du sollst bei der Beratung folgendermassen vorgehen:
 
 {{< include measures.md >}}
 
+{{< include background.md >}}
