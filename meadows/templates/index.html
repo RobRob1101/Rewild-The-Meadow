@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <title>Text Transformer</title>
+    <meta charset="UTF-8">
+    <title>Potenzialeinschätzung Wiese</title>
     <style>
-        body { font-family: sans-serif; margin: 50px; line-height: 1.6; }
-        .container { max-width: 400px; }
-        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; }
-        button { padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f1; color: #333; line-height: 1.6; padding: 20px; }
+        .card { background: white; max-width: 700px; margin: 0 auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #2e7d32; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        label { font-weight: bold; display: block; margin-top: 15px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #2e7d32; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; font-size: 16px; }
+        button:hover { background: #1b5e20; }
+        .result-box { background: #e8f5e9; padding: 20px; border-left: 5px solid #2e7d32; margin-top: 30px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Flask Text Upper-caser</h2>
-        
-        <form method="POST">
-            <input type="text" name="user_input" placeholder="Type something here..." required>
-            <button type="submit">Convert to Upper Case</button>
-        </form>
 
-        {% if result %}
-        <div style="margin-top: 20px;">
-            <strong>Result:</strong>
-            <p>{{ result }}</p>
-        </div>
-        {% endif %}
+<div class="card">
+    <h2>Wiesen-Potenzial Check</h2>
+    <form method="POST">
+        
+        <label>1. Vorhandene Arten (Artenliste/Beobachtung)</label>
+        <textarea name="arten" rows="3" placeholder="z.B. Glatthafer, Wiesen-Flockenblume, etc." required></textarea>
+
+        <label>2. Eckdaten zur Wiese</label>
+        <select name="wuechsigkeit">
+            <option value="hoch">Hohe Wüchsigkeit (frohwüchsig)</option>
+            <option value="mittel">Mittlere Wüchsigkeit</option>
+            <option value="gering">Geringe Wüchsigkeit (mager)</option>
+        </select>
+
+        <input type="text" name="exposition" placeholder="Exposition (z.B. Südhang, Ebene)">
+        
+        <select name="feuchte">
+            <option value="feucht">Feucht/Nass</option>
+            <option value="frisch">Frisch</option>
+            <option value="trocken">Trocken</option>
+            <option value="sehr trocken">Sehr trocken</option>
+        </select>
+
+        <input type="text" name="wald_einfluss" placeholder="Einfluss von Wald (Schatten, Wind)">
+        <input type="text" name="samen_nachbarn" placeholder="Sameneintrag von Nachbarflächen">
+
+        <label>3. Ertragsanteil unerwünschter Arten (%)</label>
+        <input type="number" name="unbeiwert" min="0" max="100" value="0">
+
+        <label>4. Eigene Potenzialeinschätzung</label>
+        <textarea name="potenzial" rows="2" placeholder="Wie schätzen Sie die Entwicklung ein?"></textarea>
+
+        <button type="submit">Einschätzung & Massnahmen generieren</button>
+    </form>
+
+    {% if result %}
+    <div class="result-box">
+        <h3>Ergebnis & Massnahmenvorschläge</h3>
+        <p><strong>Einschätzung:</strong> {{ result.potenzial }}</p>
+        <p><strong>Empfohlene Massnahmen:</strong></p>
+        <ul>
+            {% for punkt in result.massnahmen %}
+                <li>{{ punkt }}</li>
+            {% endfor %}
+        </ul>
     </div>
+    {% endif %}
+</div>
+
 </body>
 </html>
