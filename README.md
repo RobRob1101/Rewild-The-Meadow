@@ -33,3 +33,11 @@ Ich habe
 - Lese nicht gerne die vielen, veralteten Merkblätter, die überall rumschwirren,
 - fehlende Erfahrung bei der Bewirtschaftung von BFF-QII-Flächen,
 - Angst, meine Beiträge zu verlieren, wenn sie Fehler in der Bewirtschaftung verliert.
+
+## Render instructions file
+
+The instructions file is composed from multiple markdown files and can be rendered with Quarto, using:
+
+``` bash
+quarto render docs/INSTRUCTIONS.qmd
+```
