@@ -55,6 +55,7 @@ function setupEventListeners() {
     // Stage 2: Potenzial Flora
     document.getElementById('btn-eval-pot-plants').addEventListener('click', () => {
         switchStage('stage-management');
+        scrollToTop();
     });
 
     // Stage 3: Management Potenzial
@@ -83,6 +84,11 @@ function switchStage(stageId) {
         target.classList.add('active-stage');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 function createPlantCard(plant, selectionSetKey) {
@@ -147,6 +153,7 @@ function evaluateQ2() {
         // Nicht Q2 -> Weiter zu Schritt 2
         renderPotPlants();
         switchStage('stage-potential-plants');
+        scrollToTop();
     }
 }
 
@@ -177,6 +184,7 @@ function calculateManagementPotential() {
         showResult('mgmt_potential', totalScore);
     } else {
         switchStage('stage-seeding');
+        scrollToTop();
     }
 }
 
