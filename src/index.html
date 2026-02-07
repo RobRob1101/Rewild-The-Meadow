@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiesen-Potenzialanalyse (QII)</title>
+    <title>Wiesen-Evaluations-Tool</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <h1>Wiesen-Qualitätsbeurteilung</h1>
-            <p>Diagnoseinstrument für Biodiversitätsförderflächen (BFF)</p>
-        </div>
+    <header>
+        <h1>Wiesen-Evaluation BFF Q2</h1>
     </header>
 
-    <main id="app" class="container">
-        <div class="loading">Lade Datenmodelle...</div>
+    <main id="app">
+        <section id="stage-q2" class="active-stage">
+            <h2>Schritt 1: Q2 Zeigerpflanzen</h2>
+            <p>Bitte wählen Sie alle vorhandenen Pflanzen aus.</p>
+            <div id="q2-plant-list" class="plant-grid"></div>
+            <button id="btn-eval-q2" class="primary-btn">Auswerten</button>
+        </section>
+
+        <section id="stage-potential-plants" class="hidden">
+            <h2>Schritt 2: Potenzial-Erfassung</h2>
+            <p>Q2 wurde nicht direkt erreicht. Bitte erfassen Sie weitere Arten für die Punktzahl.</p>
+            <div id="pot-plant-list" class="plant-grid"></div>
+            <button id="btn-eval-pot-plants" class="primary-btn">Weiter zur Analyse</button>
+        </section>
+
+        <section id="stage-management" class="hidden">
+            <h2>Schritt 3: Bewirtschaftungspotenzial</h2>
+            <div class="card">
+                <h3>Können Sie durch gezielte Bewirtschaftung eingreifen?</h3>
+                <p>Mögliche Massnahmen: Schnittzeitpunkt anpassen, Bodenheubereitung (keine Silage), späte letzte Nutzung, Herbstweide, Frühschnitt oder Frühbeweidung.</p>
+                <div class="action-row">
+                    <button id="btn-mgmt-yes" class="secondary-btn">Ja, Potenzial vorhanden</button>
+                    <button id="btn-mgmt-no" class="secondary-btn">Nein, kein Potenzial</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="stage-seeding" class="hidden">
+            <h2>Schritt 4: Ansaatpotenzial</h2>
+            <p>Bitte haken Sie alle zutreffenden Ausschlusskriterien an:</p>
+            <div class="checklist">
+                <label><input type="checkbox" id="ex-shade"> Schattige Lage (Exposition)</label>
+                <label><input type="checkbox" id="ex-wet"> Feuchter Standort</label>
+                <label><input type="checkbox" id="ex-yield"> Ertrag > 80 dt TS/Jahr</label>
+                <label><input type="checkbox" id="ex-weeds"> Vorkommen von Blacken oder Ackerkratzdisteln</label>
+            </div>
+            <button id="btn-eval-seeding" class="primary-btn">Ansaat prüfen</button>
+        </section>
+
+        <section id="stage-result" class="hidden">
+            <h2 id="result-title"></h2>
+            <div id="result-body"></div>
+            <button onclick="location.reload()" class="text-btn">Neu starten</button>
+        </section>
     </main>
 
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
