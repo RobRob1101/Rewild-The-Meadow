@@ -1,30 +1,508 @@
 [
     {
-        "id": "CMPSS",
-        "name": "Glockenblumen",
-        "botanical_name": "Campanula sp.",
-        "image": "https://www.intratuin.de/media/wysiwyg/Campanula_persicifolia_Coerulea_.jpg",
+        "id": "1",
+        "name": "Alpenhelm",
+        "botanical_name": "Bartsia alpina",
+        "image": "",
+        "category": "herb",
         "is_q2": true
     },
     {
-        "id": "KNASS",
-        "name": "Witwenblumen und Skabiosen",
-        "botanical_name": "Knautia sp., Scabiosa sp.",
+        "id": "2",
+        "name": "Arnika",
+        "botanical_name": "Arnica montana",
         "image": "",
-        "is_q2": false
+        "category": "herb",
+        "is_q2": true
     },
     {
-        "id": "CENSS",
+        "id": "3",
+        "name": "Aufrechte Trespe",
+        "botanical_name": "Bromus erectus",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "4",
+        "name": "Betonie",
+        "botanical_name": "Stachys officinalis, Stachys pradica",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "5",
+        "name": "Blutwurz, Aufrechtes Fingerkraut",
+        "botanical_name": "Potentilla erecta",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "6",
+        "name": "Dost, Wirbeldost",
+        "botanical_name": "Origanum vulgare, Clinopodium vulgare",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "7",
+        "name": "Enziane blau/violett",
+        "botanical_name": "Gentiana sp. blau/violett",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "8",
+        "name": "Esparsette",
+        "botanical_name": "Onobrychis sp.",
+        "image": "",
+        "category": "legume",
+        "is_q2": true
+    },
+    {
+        "id": "9",
+        "name": "Flaumhafer",
+        "botanical_name": "Helictotrichon pubescens",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "10",
         "name": "Flockenblumen",
         "botanical_name": "Centaurea sp.",
         "image": "",
+        "category": "herb",
         "is_q2": true
     },
     {
-        "id": "ENIAN",
-        "name": "Enziane",
-        "botanical_name": "Gentiana sp. (ohne Gelber Enzian)",
+        "id": "11",
+        "name": "Gelbe Primeln",
+        "botanical_name": "Primula acaulis, P. elatior, P. veris, P. auricula",
         "image": "",
+        "category": "herb",
         "is_q2": true
+    },
+    {
+        "id": "12",
+        "name": "Gelbes Labkraut",
+        "botanical_name": "Galium verum",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "13",
+        "name": "Glockenblumen",
+        "botanical_name": "Campanula sp.",
+        "image": "https://www.intratuin.de/media/wysiwyg/Campanula_persicifolia_Coerulea_.jpg",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "14",
+        "name": "Gräser, borstenblättrig, horstwüchsig",
+        "botanical_name": "Nardus stricta, Festuca sp., Avenella flexuosa, usw.",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "15",
+        "name": "Klee, gelb, grossköpfig",
+        "botanical_name": "Lotus sp., Hippocrepis sp., Anthyllis sp., Medicago falcata",
+        "image": "",
+        "category": "legume",
+        "is_q2": true
+    },
+    {
+        "id": "16",
+        "name": "Habermark, Wiesen-Bocksbart",
+        "botanical_name": "Tragopogon sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "17",
+        "name": "Hainsimsen",
+        "botanical_name": "Luzula sp.",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "18",
+        "name": "Herbstzeitlose",
+        "botanical_name": "Colchicum sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "19",
+        "name": "Hopfenklee",
+        "botanical_name": "Medicago lupulina",
+        "image": "",
+        "category": "legume",
+        "is_q2": true
+    },
+    {
+        "id": "20",
+        "name": "Klappertopf",
+        "botanical_name": "Rhinanthus sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "21",
+        "name": "Korbblütler, gelb, mehrköpfig",
+        "botanical_name": "Crepis sp., Picris sp., Hieracium sp., Hypochaeris maculata, usw.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "22",
+        "name": "Knolliger Hahnenfuss",
+        "botanical_name": "Ranunculus bulbosus",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "23",
+        "name": "Kohldistel",
+        "botanical_name": "Cirsium oleraceum",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "24",
+        "name": "Korbblütler, gelb, einköpfig",
+        "botanical_name": "Hieracium sp., Leontodon sp., Hypochaeris uniflora, usw.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "25",
+        "name": "Kuckucks-Lichtnelke",
+        "botanical_name": "Silene flos-cuculi",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "26",
+        "name": "Leimkräuter weiss",
+        "botanical_name": "Silene sp. weiss",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "27",
+        "name": "Lilien, grossblumig",
+        "botanical_name": "Lilium sp., Paradisea sp., Anthericum",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "28",
+        "name": "Mädesüss, Spierstaude",
+        "botanical_name": "Filipendula sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "29",
+        "name": "Margerite",
+        "botanical_name": "Leucanthemum sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "30",
+        "name": "Mehlprimel",
+        "botanical_name": "Primula farinosa",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "31",
+        "name": "Mittlerer Wegerich",
+        "botanical_name": "Plantago media",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "32",
+        "name": "Orchideen",
+        "botanical_name": "Orchidaceae",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "33",
+        "name": "Platterbsen gelb",
+        "botanical_name": "Lathyrus pratensis, L. occidentalis",
+        "image": "",
+        "category": "legume",
+        "is_q2": true
+    },
+    {
+        "id": "34",
+        "name": "Ruchgras",
+        "botanical_name": "Anthoxanthum sp.",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "35",
+        "name": "Schlaffe Segge",
+        "botanical_name": "Carex flacca",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "36",
+        "name": "Skabiose/Witwenblumen",
+        "botanical_name": "Scabiosa sp., Knautia",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "37",
+        "name": "Sterndolde",
+        "botanical_name": "Astrantia sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "38",
+        "name": "Sumpfdotterblume",
+        "botanical_name": "Caltha palustris",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "39",
+        "name": "Sumpf-Herzblatt",
+        "botanical_name": "Parnassia palustris",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "40",
+        "name": "Teufelskrallen, Rapunzeln",
+        "botanical_name": "Phyteuma",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "41",
+        "name": "Thymian",
+        "botanical_name": "Thymus sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "42",
+        "name": "Trollblume",
+        "botanical_name": "Trollius europaeus",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "43",
+        "name": "Vogel-Wicke",
+        "botanical_name": "Vicia cracca",
+        "image": "",
+        "category": "legume",
+        "is_q2": true
+    },
+    {
+        "id": "44",
+        "name": "Wiesenknopf",
+        "botanical_name": "Sanguisorba sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "45",
+        "name": "Wiesenraute",
+        "botanical_name": "Thalictrum sp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "46",
+        "name": "Wiesensalbei",
+        "botanical_name": "Salvia pratensis",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "47",
+        "name": "Wollgräser",
+        "botanical_name": "Eriophorum sp.",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "48",
+        "name": "Zittergras",
+        "botanical_name": "Briza media",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "49",
+        "name": "Zypressenblättrige Wolfsmilch",
+        "botanical_name": "Euphorbia cyparissias",
+        "image": "",
+        "category": "herb",
+        "is_q2": true
+    },
+    {
+        "id": "50",
+        "name": "Seggen (ohne Schlaffe S.)",
+        "botanical_name": "Carex sp. (ohne C. flacca)",
+        "image": "",
+        "category": "grass",
+        "is_q2": true
+    },
+    {
+        "id": "51",
+        "name": "Fromental",
+        "botanical_name": "Arrhenatherum elatius",
+        "image": "",
+        "category": "grass",
+        "is_q2": false
+    },
+    {
+        "id": "52",
+        "name": "Knaulgras",
+        "botanical_name": "Dactylis glomerata",
+        "image": "",
+        "category": "grass",
+        "is_q2": false
+    },
+    {
+        "id": "53",
+        "name": "Rot-Schwingel",
+        "botanical_name": "Festuca rubra",
+        "image": "",
+        "category": "grass",
+        "is_q2": false
+    },
+    {
+        "id": "54",
+        "name": "Goldhafer",
+        "botanical_name": "Trisetum flavescens",
+        "image": "",
+        "category": "grass",
+        "is_q2": false
+    },
+    {
+        "id": "55",
+        "name": "Rotklee",
+        "botanical_name": "Trifolium pratense",
+        "image": "",
+        "category": "legume",
+        "is_q2": false
+    },
+    {
+        "id": "56",
+        "name": "Wicke blau/violett",
+        "botanical_name": "Vicia cracca",
+        "image": "",
+        "category": "legume",
+        "is_q2": false
+    },
+    {
+        "id": "57",
+        "name": "Grosse Bibernelle",
+        "botanical_name": "Pimpinella major",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "58",
+        "name": "Vergissmeinnicht",
+        "botanical_name": "Myosotis spp.",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "59",
+        "name": "Wiesen-Labkraut",
+        "botanical_name": "Galium mollugo",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "60",
+        "name": "Rote Waldnelke",
+        "botanical_name": "Silene dioica",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "61",
+        "name": "Spitzwegerich",
+        "botanical_name": "Plantago lanceolata",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "62",
+        "name": "Gemeine Brunelle",
+        "botanical_name": "Prunella vulgaris",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
+    },
+    {
+        "id": "63",
+        "name": "Kümmel",
+        "botanical_name": "Carum carvi",
+        "image": "",
+        "category": "herb",
+        "is_q2": false
     }
 ]
+
+
