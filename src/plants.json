@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Alpenhelm",
         "botanical_name": "Bartsia alpina",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bartsia_alpina_LC0333.jpg/1024px-Bartsia_alpina_LC0333.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -11,7 +11,7 @@
         "id": "2",
         "name": "Arnika",
         "botanical_name": "Arnica montana",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Arnica_montana_180605.jpg/1024px-Arnica_montana_180605.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -19,7 +19,7 @@
         "id": "3",
         "name": "Aufrechte Trespe",
         "botanical_name": "Bromus erectus",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bromus_erectus1.JPG/1024px-Bromus_erectus1.JPG",
         "category": "grass",
         "is_q2": true
     },
@@ -27,7 +27,7 @@
         "id": "4",
         "name": "Betonie",
         "botanical_name": "Stachys officinalis, Stachys pradica",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stachys_densiflora0.jpg/1024px-Stachys_densiflora0.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -35,7 +35,7 @@
         "id": "5",
         "name": "Blutwurz, Aufrechtes Fingerkraut",
         "botanical_name": "Potentilla erecta",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Potentilla_erecta01.jpg/1024px-Potentilla_erecta01.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -43,7 +43,7 @@
         "id": "6",
         "name": "Dost, Wirbeldost",
         "botanical_name": "Origanum vulgare, Clinopodium vulgare",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Clinopodium_vulgare_inflorescence.jpg/1024px-Clinopodium_vulgare_inflorescence.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -51,7 +51,7 @@
         "id": "7",
         "name": "Enziane blau/violett",
         "botanical_name": "Gentiana sp. blau/violett",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flora_Appennino_Tosco_Emiliano_002.JPG/1024px-Flora_Appennino_Tosco_Emiliano_002.JPG",
         "category": "herb",
         "is_q2": true
     },
@@ -59,7 +59,7 @@
         "id": "8",
         "name": "Esparsette",
         "botanical_name": "Onobrychis sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Korina_2011-05-20_Onobrychis_viciifolia.jpg/1024px-Korina_2011-05-20_Onobrychis_viciifolia.jpg",
         "category": "legume",
         "is_q2": true
     },
@@ -67,7 +67,7 @@
         "id": "9",
         "name": "Flaumhafer",
         "botanical_name": "Helictotrichon pubescens",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Avenula_pubescens_kz03.jpg/1024px-Avenula_pubescens_kz03.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -75,7 +75,7 @@
         "id": "10",
         "name": "Flockenblumen",
         "botanical_name": "Centaurea sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Centaurea_jacea_01.JPG/1024px-Centaurea_jacea_01.JPG",
         "category": "herb",
         "is_q2": true
     },
@@ -83,7 +83,7 @@
         "id": "11",
         "name": "Gelbe Primeln",
         "botanical_name": "Primula acaulis, P. elatior, P. veris, P. auricula",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Primel.jpg/1024px-Primel.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -91,7 +91,7 @@
         "id": "12",
         "name": "Gelbes Labkraut",
         "botanical_name": "Galium verum",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%28MHNT%29_Galium_verum_inflorescence.jpg/1024px-%28MHNT%29_Galium_verum_inflorescence.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -99,7 +99,7 @@
         "id": "13",
         "name": "Glockenblumen",
         "botanical_name": "Campanula sp.",
-        "image": "https://www.intratuin.de/media/wysiwyg/Campanula_persicifolia_Coerulea_.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Campanula_aa.jpg/1024px-Campanula_aa.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -107,7 +107,7 @@
         "id": "14",
         "name": "Gräser, borstenblättrig, horstwüchsig",
         "botanical_name": "Nardus stricta, Festuca sp., Avenella flexuosa, usw.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nardus_stricta_01.JPG/1024px-Nardus_stricta_01.JPG",
         "category": "grass",
         "is_q2": true
     },
@@ -115,7 +115,7 @@
         "id": "15",
         "name": "Klee, gelb, grossköpfig",
         "botanical_name": "Lotus sp., Hippocrepis sp., Anthyllis sp., Medicago falcata",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Trifolium_campestre_300907.jpg/1024px-Trifolium_campestre_300907.jpg",
         "category": "legume",
         "is_q2": true
     },
@@ -123,7 +123,7 @@
         "id": "16",
         "name": "Habermark, Wiesen-Bocksbart",
         "botanical_name": "Tragopogon sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TragopogonPratensisFlowers.jpg/1024px-TragopogonPratensisFlowers.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -131,7 +131,7 @@
         "id": "17",
         "name": "Hainsimsen",
         "botanical_name": "Luzula sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gewone_veldbies_%28Luzula_campestris%29.jpg/1024px-Gewone_veldbies_%28Luzula_campestris%29.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -139,7 +139,7 @@
         "id": "18",
         "name": "Herbstzeitlose",
         "botanical_name": "Colchicum sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Herbstzeitlose_IMG_9952-2.jpg/1024px-Herbstzeitlose_IMG_9952-2.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -147,7 +147,7 @@
         "id": "19",
         "name": "Hopfenklee",
         "botanical_name": "Medicago lupulina",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/MedicagoLupulina.jpg/1024px-MedicagoLupulina.jpg",
         "category": "legume",
         "is_q2": true
     },
@@ -155,7 +155,7 @@
         "id": "20",
         "name": "Klappertopf",
         "botanical_name": "Rhinanthus sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Yellow-rattle_close_700.jpg/1024px-Yellow-rattle_close_700.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -163,7 +163,7 @@
         "id": "21",
         "name": "Korbblütler, gelb, mehrköpfig",
         "botanical_name": "Crepis sp., Picris sp., Hieracium sp., Hypochaeris maculata, usw.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Crepis_jacquini_a1.jpg/1024px-Crepis_jacquini_a1.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -171,7 +171,7 @@
         "id": "22",
         "name": "Knolliger Hahnenfuss",
         "botanical_name": "Ranunculus bulbosus",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ranunculus_bulbosus_plant.jpg/1024px-Ranunculus_bulbosus_plant.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -179,7 +179,7 @@
         "id": "23",
         "name": "Kohldistel",
         "botanical_name": "Cirsium oleraceum",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Cirsium_oleraceum_180808.jpg/1024px-Cirsium_oleraceum_180808.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -187,7 +187,7 @@
         "id": "24",
         "name": "Korbblütler, gelb, einköpfig",
         "botanical_name": "Hieracium sp., Leontodon sp., Hypochaeris uniflora, usw.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Yellow_Hawkweed.jpg/1024px-Yellow_Hawkweed.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -195,7 +195,7 @@
         "id": "25",
         "name": "Kuckucks-Lichtnelke",
         "botanical_name": "Silene flos-cuculi",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/XN_Lychnis_flos_cuculi.jpg/1024px-XN_Lychnis_flos_cuculi.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -203,7 +203,7 @@
         "id": "26",
         "name": "Leimkräuter weiss",
         "botanical_name": "Silene sp. weiss",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Silene_latifolia_2.jpeg/1024px-Silene_latifolia_2.jpeg",
         "category": "herb",
         "is_q2": true
     },
@@ -211,7 +211,7 @@
         "id": "27",
         "name": "Lilien, grossblumig",
         "botanical_name": "Lilium sp., Paradisea sp., Anthericum",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Lilium_carniolicum_tscheppaschlucht_01.jpg/1024px-Lilium_carniolicum_tscheppaschlucht_01.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -219,7 +219,7 @@
         "id": "28",
         "name": "Mädesüss, Spierstaude",
         "botanical_name": "Filipendula sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Filipendula-ulmaria.JPG/1024px-Filipendula-ulmaria.JPG",
         "category": "herb",
         "is_q2": true
     },
@@ -227,7 +227,7 @@
         "id": "29",
         "name": "Margerite",
         "botanical_name": "Leucanthemum sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/LEUCANTHEMUM_VULGARE_-_MORROCURT_-_IB-718_%28Margarida%29.JPG/1024px-LEUCANTHEMUM_VULGARE_-_MORROCURT_-_IB-718_%28Margarida%29.JPG",
         "category": "herb",
         "is_q2": true
     },
@@ -235,7 +235,7 @@
         "id": "30",
         "name": "Mehlprimel",
         "botanical_name": "Primula farinosa",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Primula_farinosa_2_RF.jpg/1024px-Primula_farinosa_2_RF.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -243,7 +243,7 @@
         "id": "31",
         "name": "Mittlerer Wegerich",
         "botanical_name": "Plantago media",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/00_4041_Mittlere_Wegerich_%28Plantago_media%29.jpg/1024px-00_4041_Mittlere_Wegerich_%28Plantago_media%29.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -251,7 +251,7 @@
         "id": "32",
         "name": "Orchideen",
         "botanical_name": "Orchidaceae",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Plant_Orchid_Cymbidium_aloifolium_P1110661_05_-_cropped.jpg/1024px-Plant_Orchid_Cymbidium_aloifolium_P1110661_05_-_cropped.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -259,7 +259,7 @@
         "id": "33",
         "name": "Platterbsen gelb",
         "botanical_name": "Lathyrus pratensis, L. occidentalis",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/%28MHNT%29_Lathyrus_pratensis-_Habit.jpg/1024px-%28MHNT%29_Lathyrus_pratensis-_Habit.jpg",
         "category": "legume",
         "is_q2": true
     },
@@ -267,7 +267,7 @@
         "id": "34",
         "name": "Ruchgras",
         "botanical_name": "Anthoxanthum sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Anthoxanthum_odoratum.jpg/1024px-Anthoxanthum_odoratum.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -275,7 +275,7 @@
         "id": "35",
         "name": "Schlaffe Segge",
         "botanical_name": "Carex flacca",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/CarexAcuta.jpg/1024px-CarexAcuta.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -283,7 +283,7 @@
         "id": "36",
         "name": "Skabiose/Witwenblumen",
         "botanical_name": "Scabiosa sp., Knautia",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Knautia_arvensis_inflorescence_%28top_view%29_-_Keila.jpg/1024px-Knautia_arvensis_inflorescence_%28top_view%29_-_Keila.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -291,7 +291,7 @@
         "id": "37",
         "name": "Sterndolde",
         "botanical_name": "Astrantia sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Astrantia_major_1.jpg/1024px-Astrantia_major_1.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -299,7 +299,7 @@
         "id": "38",
         "name": "Sumpfdotterblume",
         "botanical_name": "Caltha palustris",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2007-03-27Caltha_palustris01.jpg/1024px-2007-03-27Caltha_palustris01.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -307,7 +307,7 @@
         "id": "39",
         "name": "Sumpf-Herzblatt",
         "botanical_name": "Parnassia palustris",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parnassia_palustris_030905.jpg/1024px-Parnassia_palustris_030905.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -315,7 +315,7 @@
         "id": "40",
         "name": "Teufelskrallen, Rapunzeln",
         "botanical_name": "Phyteuma",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Phyteuma_vagneri_Rodnei.jpg/1024px-Phyteuma_vagneri_Rodnei.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -323,7 +323,7 @@
         "id": "41",
         "name": "Thymian",
         "botanical_name": "Thymus sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Thymus_camphoratus_kz07.jpg/1024px-Thymus_camphoratus_kz07.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -331,7 +331,7 @@
         "id": "42",
         "name": "Trollblume",
         "botanical_name": "Trollius europaeus",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Trollius_europaeus_Schwaebisch_Hall-Wackershofen_20080530_1.jpg/1024px-Trollius_europaeus_Schwaebisch_Hall-Wackershofen_20080530_1.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -339,7 +339,7 @@
         "id": "43",
         "name": "Vogel-Wicke",
         "botanical_name": "Vicia cracca",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tufted_vetch_close_800.jpg/1024px-Tufted_vetch_close_800.jpg",
         "category": "legume",
         "is_q2": true
     },
@@ -347,7 +347,7 @@
         "id": "44",
         "name": "Wiesenknopf",
         "botanical_name": "Sanguisorba sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sanguisorba_hakusanensis1.jpg/1024px-Sanguisorba_hakusanensis1.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -355,7 +355,7 @@
         "id": "45",
         "name": "Wiesenraute",
         "botanical_name": "Thalictrum sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Thalictrum_aquilegifolium_02.jpg/1024px-Thalictrum_aquilegifolium_02.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -363,7 +363,7 @@
         "id": "46",
         "name": "Wiesensalbei",
         "botanical_name": "Salvia pratensis",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Salvia_pratensis_LC0340.jpg/1024px-Salvia_pratensis_LC0340.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -371,7 +371,7 @@
         "id": "47",
         "name": "Wollgräser",
         "botanical_name": "Eriophorum sp.",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wollgras_I.jpg/1024px-Wollgras_I.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -379,7 +379,7 @@
         "id": "48",
         "name": "Zittergras",
         "botanical_name": "Briza media",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Briza_maxima0.jpg/1024px-Briza_maxima0.jpg",
         "category": "grass",
         "is_q2": true
     },
@@ -387,7 +387,7 @@
         "id": "49",
         "name": "Zypressenblättrige Wolfsmilch",
         "botanical_name": "Euphorbia cyparissias",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%28MHNT%29_Euphorbia_cyparissias_Inflorescence_and_leaves.jpg/1024px-%28MHNT%29_Euphorbia_cyparissias_Inflorescence_and_leaves.jpg",
         "category": "herb",
         "is_q2": true
     },
@@ -395,7 +395,7 @@
         "id": "50",
         "name": "Seggen (ohne Schlaffe S.)",
         "botanical_name": "Carex sp. (ohne C. flacca)",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Carex_flacca_kz12.jpg/1024px-Carex_flacca_kz12.jpg",
         "category": "grass",
         "is_q2": true
     },
