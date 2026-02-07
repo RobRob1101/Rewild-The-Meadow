@@ -1,0 +1,203 @@
+:root {
+    --primary: #2d5a27; /* Dark Swiss Meadow Green */
+    --primary-light: #e6f0e4;
+    --accent: #d84315; /* Alert color */
+    --text: #1a1a1a;
+    --text-light: #666;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --border: #e0e0e0;
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.main-header h1 { margin: 0; font-weight: 600; font-size: 1.5rem; }
+.main-header p { margin: 0.5rem 0 0; color: var(--text-light); }
+
+/* Wizard Layout */
+.step-container {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.step-header { margin-bottom: 2rem; }
+.step-title { font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; }
+.step-desc { color: var(--text-light); font-size: 0.95rem; }
+
+/* Form Elements */
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; font-weight: 500; margin-bottom: 0.5rem; }
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    background: white;
+}
+
+/* Plant Grid */
+.plant-grid {
+    display: grid;
+    /* Responsive Grid: Karten werden nicht schmaler als 300px */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plant-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem; /* Etwas mehr Padding für Luftigkeit */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.plant-card:hover { 
+    border-color: var(--primary); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.plant-card.selected {
+    background-color: var(--primary-light);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+/* Flex Layout innerhalb der Karte */
+.plant-inner-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Oben bündig */
+    gap: 1rem;
+    height: 100%;
+}
+
+/* Linke Spalte: Text */
+.plant-text-content {
+    flex: 1; /* Nimmt den gesamten verfügbaren Platz ein */
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-name { 
+    font-weight: 600; 
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
+}
+
+.plant-botanical { 
+    font-style: italic; 
+    color: var(--text-light); 
+    font-size: 0.85rem; 
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.plant-desc { 
+    font-size: 0.85rem; 
+    color: #555; 
+    line-height: 1.5;
+}
+
+/* Rechte Spalte: Bild Container */
+.plant-img-container {
+    flex-shrink: 0; /* Verhindert Schrumpfen */
+    width: 120px;    /* Fixe Breite */
+    height: 120px;   /* Fixe Höhe */
+}
+
+/* Das Bild selbst */
+.plant-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Kreisrund */
+    object-fit: cover;  /* Bild füllt den Kreis ohne Verzerrung */
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+}
+
+.plant-card.selected .plant-img {
+    border-color: var(--primary);
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: #1e3f1a; }
+
+.btn-secondary { background: transparent; color: var(--text-light); border: 1px solid var(--border); }
+.btn-secondary:hover { background: #f0f0f0; }
+
+/* Result Box */
+.result-box {
+    padding: 2rem;
+    border-radius: var(--radius);
+    background: #f8f9fa;
+    border-left: 5px solid #ccc;
+}
+
+.result-success { background: #edf7ed; border-color: #2e7d32; }
+.result-warning { background: #fff3e0; border-color: #ef6c00; }
+.result-fail { background: #ffebee; border-color: #c62828; }
+
+.result-box h2 { margin-top: 0; }
+.result-details { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1); }
+.result-details ul { padding-left: 1.2rem; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
