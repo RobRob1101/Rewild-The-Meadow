@@ -223,9 +223,19 @@ function showResult(type, score = 0) {
     // 2. Inhalte aus JSON laden
     const measureData = state.measures.find(m => m.tags.includes(type));
     
-    // Titel setzen
-    titleEl.innerText = measureData ? measureData.name : "Unbekanntes Ergebnis";
-    titleEl.style.color = config.color;
+// Haupttitel + Untertitel setzen
+const mainTitle = "Qualitätsausgangsbestand";
+const subTitle = measureData ? measureData.name : "Unbekanntes Ergebnis";
+
+titleEl.innerHTML = `
+    <span class="result-main-title">${mainTitle}</span><br>
+    <span class="result-sub-title">${subTitle}</span>
+`;
+    const mainTitleEl = titleEl.querySelector('.result-main-title');
+if (mainTitleEl) {
+    mainTitleEl.style.color = config.color;
+}
+
 
     // Text formatieren (Markdown-ähnliche Listen zu HTML)
     let descriptionHtml = '';
