@@ -272,11 +272,11 @@ function showResult(type) {
     
     // 1. Visuelle Konfiguration (Gauge & Farbe)
     const visualConfig = {
-        'no_potential':    { angle: -72, color: "#d32f2f" }, // Rot
-        'seeding_potential': { angle: -36, color: "#f57c00" }, // Orange
-        'mgmt_potential':  { angle: 0,   color: "#fbc02d" }, // Gelb
-        'q2_good':         { angle: 36,  color: "#7cb342" }, // Hellgrün
-        'q2_very_good':    { angle: 72,  color: "#388e3c" }  // Dunkelgrün
+        'no_potential':    { angle: -72, color: "#000000" }, // Rot
+        'seeding_potential': { angle: -36, color: "#000000" }, // Orange
+        'mgmt_potential':  { angle: 0,   color: "#000000" }, // Gelb
+        'q2_good':         { angle: 36,  color: "#000000" }, // Hellgrün
+        'q2_very_good':    { angle: 72,  color: "#000000" }  // Dunkelgrün
     };
 
     // Fallback, falls Typ unbekannt
