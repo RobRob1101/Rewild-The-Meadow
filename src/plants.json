@@ -1,33 +1,29 @@
 [
     {
         "id": "CMPSS",
-        "labels": "Glockenblumen",
+        "name": "Glockenblumen",
         "botanical_name": "Campanula sp.",
-        "description": "Blätter ungeteilt, wechselständig; Stängelblätter oft mit feinen weissen Drüsenpunkten; Blüte glockenförmig.",
         "image": "https://www.intratuin.de/media/wysiwyg/Campanula_persicifolia_Coerulea_.jpg",
         "is_q2": true
     },
     {
         "id": "KNASS",
-        "labels": "Witwenblumen und Skabiosen",
+        "name": "Witwenblumen und Skabiosen",
         "botanical_name": "Knautia sp., Scabiosa sp.",
-        "description": "Blätter gegenständig; Blütenköpfe von Hüllblättern umgeben.",
         "image": "",
         "is_q2": false
     },
     {
         "id": "CENSS",
-        "labels": "Flockenblumen",
+        "name": "Flockenblumen",
         "botanical_name": "Centaurea sp.",
-        "description": "Blätter wechselständig; Blütenköpfe distelartig, aber ohne Stacheln; Randblüten oft flockig zerschlitzt.",
         "image": "",
         "is_q2": true
     },
     {
-        "id": "GENSS",
-        "labels": "Enziane",
+        "id": "ENIAN",
+        "name": "Enziane",
         "botanical_name": "Gentiana sp. (ohne Gelber Enzian)",
-        "description": "Blätter meist steif; Saum der Krone 4- oder 5-zipfelig.",
         "image": "",
         "is_q2": true
     }
