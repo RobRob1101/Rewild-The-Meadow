@@ -34,6 +34,30 @@ Ich habe
 - fehlende Erfahrung bei der Bewirtschaftung von BFF-QII-Flächen,
 - Angst, meine Beiträge zu verlieren, wenn sie Fehler in der Bewirtschaftung verliert.
 
+## Flowchart
+
+```mermaid
+flowchart TD
+    A{Anzahl Indikatorpflanzen} -->|mehr als 8| B(Note: Sehr gut)
+    A -->|zwischen 6 - 8| C(Note: gut)
+    A -->|weniger als 6| E[Anzahl zusätzliche Indikatoren]
+    B --> Z(QII erreicht)
+    C --> Z
+    E --> F[Weitere Fragen]
+    F --> G{mehr als 12 Punkte}
+    G -->|Ja| H{Bewirtschaftungspotential?}
+    G -->|Nein| I{Ansaatpotential:
+    • Sonnenscheindauer
+    • Bodenbeschaffenheit leicht oder mittelschwer
+    • Ertragsniveau <= 80 dt TS / hektar
+    • keine Problempflanzen Blacken und AKD}
+    I -->|Ja| J[Ansaat sinvoll]
+    I --> Y
+    H -->|Bestandeslenkung gemäss Empfehlungen| Z
+    J -->|Ansaat durchgeführt| Z
+    H -->|Nein| Y(QII nicht erreicht)
+```
+
 ## Render instructions file
 
 The instructions file is composed from multiple markdown files and can be rendered with Quarto, using:
