@@ -172,8 +172,8 @@ function calculateManagementPotential() {
     const totalScore = plantScore + envScore + mgmtScore;
     state.potScore = totalScore;
 
-    // Schwellenwert: 8 Punkte für erfolgreiche Aufwertung durch Bewirtschaftung
-    if (totalScore >= 8) {
+    // Schwellenwert: 12 Punkte für erfolgreiche Aufwertung durch Bewirtschaftung
+    if (totalScore >= 12) {
         showResult('mgmt_potential', totalScore);
     } else {
         switchStage('stage-seeding');
